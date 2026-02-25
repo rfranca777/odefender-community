@@ -108,6 +108,52 @@ Automatically classify and tag your **entire server fleet** in MDE based on Azur
 
 ---
 
+### ⚙️ [MDE-PolicyAutomation](https://github.com/rfranca777/MDE-PolicyAutomation) — `v1.0.4` ✅ Production Ready
+
+> **Azure Policy + Intune Groups + MDE Device Tags — Zero-Touch Governance**
+
+Deploy **one script** and get a complete governance stack: Azure Policy auto-tags every Windows VM, an Automation Account syncs VMs to Entra ID groups every hour, and MDE Device Groups apply differentiated AV/ASR policies per environment — with **zero portal clicking**.
+
+<table>
+<tr>
+<td width="50%">
+
+**⏱️ Before (Manual)**
+- MDE portal: one big unsorted device list
+- No differentiated policies per environment
+- New VMs go untagged for weeks
+- Intune groups manually created, always stale
+- New subscription = a full day of portal work
+
+</td>
+<td width="50%">
+
+**⚡ After (MDE PolicyAutomation)**
+- MDE Device Groups per subscription — automatic
+- PROD/DEV/TEST → different AV/ASR policies
+- Azure Policy tags VMs at creation time
+- Entra groups synced every hour via Automation
+- New sub → run script → 10 min → done forever
+
+</td>
+</tr>
+</table>
+
+**Key Numbers**:
+
+| Metric | Value |
+|--------|-------|
+| Deployment Stages | 14 (fully autonomous) |
+| Lines of PowerShell | 1,350+ |
+| Azure Resources Created | 8 (RG, AA, Group, Identity, RBAC, Runbook, Policy, Schedule) |
+| Sync Frequency | Hourly (configurable) |
+| Platform Support | Windows + Cloud Shell |
+| Time to Full Deployment | ~10 minutes from clone to production |
+
+👉 **[Get Started →](https://github.com/rfranca777/MDE-PolicyAutomation)**
+
+---
+
 ### 🔮 Coming Soon
 
 | Project | Description | ETA |
@@ -117,8 +163,6 @@ Automatically classify and tag your **entire server fleet** in MDE based on Azur
 | 🔗 **Defender-3rd-Party-Bridge** | Integration patterns for CrowdStrike, SentinelOne, Palo Alto, and other third-party tools with Microsoft Sentinel | Q4 2025 |
 | 📋 **Security-Posture-Baseline** | Automated security posture assessment against CIS Benchmarks, with remediation playbooks | Q4 2025 |
 | 🛡️ **Endpoint-Hardening-Pack** | GPO/Intune templates for endpoint hardening with validation scripts and rollback support | 2026 |
-
-> *Each project will follow the same standard: complete documentation, E2E tests, report-first approach, and AI agent integration.*
 
 ---
 
@@ -172,12 +216,14 @@ The current version of MDE ServerTags **identifies** issues — but a human stil
 **Rafael França**  
 **Customer Success Architect — Cyber Security @ Microsoft**
 
-I work with enterprises every day helping them unlock the full potential of Microsoft's security ecosystem. These projects are born from the real challenges I see in the field — the repetitive, time-consuming tasks that keep talented security teams from doing what they do best.
+I work at Microsoft helping enterprises unlock the full potential of the security ecosystem — from Defender for Endpoint to Sentinel, from Intune governance to end-to-end protection strategies. These projects are born from real-world challenges I see every day in the field: talented security teams spending more time configuring tools than actually defending their organizations.
+
+**Why I share this publicly:**
+
+I believe that **knowledge shared is defense multiplied**. Security maturity shouldn't be a privilege reserved for organizations with unlimited budgets and headcount. By open-sourcing the patterns, automations, and architectures I build with customers, I hope to raise the security baseline for everyone — from enterprise SOCs to one-person security teams.
 
 > *"Empowering every person and every organization on the planet to achieve more."*  
-> *This isn't just Microsoft's mission — it's mine. Sharing knowledge is the foundation of every strong defense.*
-
-These publications aim to **support people and organizations** in reaching higher security maturity, making end-to-end protection accessible — not just aspirational.
+> *This isn't just Microsoft's mission — it's mine. Every script published here is a step toward making end-to-end protection accessible, not just aspirational.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rafael_França-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rfranca777/)
 [![Email](https://img.shields.io/badge/Email-rafael.franca@live.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rafael.franca@live.com)
