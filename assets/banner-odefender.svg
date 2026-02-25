@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1b2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0078d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00bcf2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)" rx="12"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="100" y1="0" x2="100" y2="320"/>
+    <line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="300" y1="0" x2="300" y2="320"/>
+    <line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="500" y1="0" x2="500" y2="320"/>
+    <line x1="600" y1="0" x2="600" y2="320"/>
+    <line x1="700" y1="0" x2="700" y2="320"/>
+    <line x1="800" y1="0" x2="800" y2="320"/>
+    <line x1="900" y1="0" x2="900" y2="320"/>
+    <line x1="1000" y1="0" x2="1000" y2="320"/>
+    <line x1="1100" y1="0" x2="1100" y2="320"/>
+  </g>
+
+  <!-- Decorative hexagons -->
+  <g opacity="0.08" fill="none" stroke="#00d4ff" stroke-width="1">
+    <polygon points="80,50 110,35 140,50 140,80 110,95 80,80"/>
+    <polygon points="1060,220 1090,205 1120,220 1120,250 1090,265 1060,250"/>
+    <polygon points="950,40 975,27 1000,40 1000,65 975,78 950,65"/>
+    <polygon points="150,230 175,217 200,230 200,255 175,268 150,255"/>
+  </g>
+
+  <!-- Shield icon -->
+  <g transform="translate(280, 70)" filter="url(#glow)">
+    <path d="M0,20 L30,0 L60,20 L60,55 C60,90 30,110 30,110 C30,110 0,90 0,55 Z"
+          fill="url(#shield)" opacity="0.9"/>
+    <path d="M20,45 L28,55 L42,35" stroke="white" stroke-width="4" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="370" y="110" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="52"
+        fill="white" font-weight="700" letter-spacing="2">ODefender</text>
+  <text x="690" y="110" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="52"
+        fill="url(#accent)" font-weight="300" letter-spacing="2">Community</text>
+
+  <!-- Subtitle -->
+  <text x="370" y="150" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="20"
+        fill="#8899bb" font-weight="400" letter-spacing="3">SECURITY AUTOMATION FOR THE REAL WORLD</text>
+
+  <!-- Accent line -->
+  <rect x="370" y="170" width="460" height="2" fill="url(#accent)" rx="1" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="370" y="205" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15"
+        fill="#6688aa" font-weight="400">Enterprise-grade automation packages for Microsoft Defender,</text>
+  <text x="370" y="228" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15"
+        fill="#6688aa" font-weight="400">Sentinel, and the broader security ecosystem.</text>
+
+  <!-- Tech pills -->
+  <g transform="translate(370, 255)">
+    <rect x="0" y="0" width="110" height="28" rx="14" fill="#0078d4" opacity="0.3"/>
+    <text x="55" y="19" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12"
+          fill="#00bcf2" text-anchor="middle">MDE</text>
+
+    <rect x="120" y="0" width="110" height="28" rx="14" fill="#0078d4" opacity="0.3"/>
+    <text x="175" y="19" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12"
+          fill="#00bcf2" text-anchor="middle">Sentinel</text>
+
+    <rect x="240" y="0" width="130" height="28" rx="14" fill="#0078d4" opacity="0.3"/>
+    <text x="305" y="19" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12"
+          fill="#00bcf2" text-anchor="middle">PowerShell</text>
+
+    <rect x="380" y="0" width="130" height="28" rx="14" fill="#0078d4" opacity="0.3"/>
+    <text x="445" y="19" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12"
+          fill="#00bcf2" text-anchor="middle">Open Source</text>
+  </g>
+
+  <!-- Version pill bottom-right -->
+  <rect x="1050" y="285" width="120" height="22" rx="11" fill="#00d4ff" opacity="0.15"/>
+  <text x="1110" y="300" font-family="Consolas,monospace" font-size="11"
+        fill="#00d4ff" text-anchor="middle" opacity="0.8">v1.0 • 2025</text>
+</svg>
