@@ -154,6 +154,51 @@ Deploy **one script** and get a complete governance stack: Azure Policy auto-tag
 
 ---
 
+### 📂 [FreeNameConvention](https://github.com/rfranca777/FreeNameConvention) — `v3.1.0` ✅ Production Ready
+> **File Naming Compliance Guardian — 62 Normatives, 4 Languages, 6 Regions**
+
+Automatically enforce international file naming standards on your Windows folders in real-time. Select from **62 normatives** spanning ISO, GDPR, LGPD, HIPAA, SOX, NF-e, and regional standards from 6 continents — with SMTP email alerts, admin password protection, and a built-in violation log. **Free forever. No cloud required.**
+
+<table>
+<tr>
+<td width="50%">
+
+**⏱️ Before (Manual)**
+- Files named inconsistently across teams
+- Compliance audits fail due to naming violations
+- GDPR/LGPD filenames expose sensitive data classification
+- Manual review of hundreds of files per audit
+- Different naming rules per country, per project
+
+</td>
+<td width="50%">
+
+**⚡ After (FreeNameConvention)**
+- Real-time guardian blocks non-compliant filenames
+- 62 normatives: ISO, GDPR, LGPD, HIPAA, SOX, NF-e, POPIA...
+- SMTP alerts on every violation
+- 4 languages: PT 🇧🇷 / EN 🇺🇸 / HE 🏳️ / ES 🇪🇸
+- STRIDE-hardened: PBKDF2 admin auth, IPC allowlist
+
+</td>
+</tr>
+</table>
+
+**Key Numbers**:
+
+| Metric | Value |
+|--------|-------|
+| Normatives | 62 (8 Global · 24 Americas · 10 Europe · 9 Asia-Pacific · 7 Middle East + Africa) |
+| Languages | 4 (Portuguese · English · Hebrew · Spanish) |
+| Token Engine | 14 tokens (date, dept, region, version, project, author, lang...) |
+| Security Model | STRIDE — 6 threat categories mitigated |
+| Installer Size | ~76 MB (NSIS, no dependencies) |
+| Platform | Windows 10/11 · Electron 32 · Node.js ≥ 18 |
+| License | MIT — free forever |
+
+👉 **[Download Installer →](https://github.com/rfranca777/FreeNameConvention/releases/latest)**
+
+---
 ### 🔮 Coming Soon
 
 | Project | Description | ETA |
